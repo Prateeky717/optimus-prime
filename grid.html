@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+         html,body{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+      }
+           .container{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(102, 208, 243);
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: auto auto auto  auto auto auto;
+        gap: 25px;
+        
+    
+    }
+
+        .box{
+         height: 100px;
+         width: 100px;
+         background-color: yellow;
+         width: 100%;
+         text-align: center;
+         font-size: 3rem;
+         justify-content: center;
+      }
+
+      .item1{
+        grid-column-start: 1;
+       grid-column-end: 6;
+       height: 100%;
+      }
+
+      .item2{
+        grid-row-start: 2;
+        grid-row-end: 6;
+        height: 100%;
+      }
+
+      .item3{
+        grid-column-start: 2;
+       grid-column-end: 4;
+          grid-row-start: 2;
+        grid-row-end: 5;
+       height: 100%;
+      }
+
+      .item4{
+        grid-column-start: 4;
+       grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 5;
+       height: 100%;
+      }
+      .item5{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        height: 100%;
+      }
+      .item6{
+          grid-column-start: 1;
+       grid-column-end: 6;
+       height: 100%;
+      }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item1">Header</div>
+        <div class="box item2">side</div>
+        <div class="box item3">main 1</div>
+        <div class="box item4"> main 2</div>
+        <div class="box item5"> content</div>
+        <div class="box item6"> footer</div>
+    </div>
+</body>
+</html>
